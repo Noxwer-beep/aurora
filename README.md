@@ -14,9 +14,9 @@
 
 ---
 
-Most dark pages are black rectangles with white text. This one tries to have
-weather: layered light that shifts as you scroll, with the type staying completely
-still so the movement reads as the background, not as decoration.
+Most dark pages are a black rectangle with white text. I wanted some atmosphere — light
+that moves as you scroll — with the type staying still, so the movement reads as
+background and not as decoration.
 
 ## What is in here
 
@@ -38,12 +38,12 @@ python3 -m http.server 8000
 
 ## What it demonstrates
 
-- **`mix-blend-mode: overlay` on a slow radial gradient** — the light accumulates
-  instead of sitting on top of the text.
-- **`backdrop-filter` on the glass chips and cards** — the blur marks the surface as
-  a layer over the gradient, not a flat panel sitting on it.
-- **Scroll parallax throttled through `requestAnimationFrame`**, and disabled
-  entirely under `prefers-reduced-motion`.
+- **`mix-blend-mode: overlay` on a slow radial gradient.** The light builds up instead
+  of sitting on top of the text.
+- **`backdrop-filter` on the glass chips and cards** marks them as a layer over the
+  gradient rather than a flat panel on it.
+- **Scroll parallax throttled through `requestAnimationFrame`**, and off entirely
+  under `prefers-reduced-motion`.
 
 ## Related
 
